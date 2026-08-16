@@ -7,11 +7,6 @@
 ![Electron](https://img.shields.io/badge/Electron-28.3.3-47848F)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
-## 界面预览
-
-<!-- TODO: 将截图保存为 docs/screenshot.png 后取消下面一行的注释 -->
-<!-- ![界面截图](docs/screenshot.png) -->
-
 ## 功能特性
 
 - **一键启动**：应用启动时自动拉起 DSH 本地服务并加载界面，关闭窗口即完整退出（服务进程一并清理，不会残留后台）。
