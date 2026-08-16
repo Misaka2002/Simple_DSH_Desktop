@@ -1,0 +1,44 @@
+<!-- index.html — 本地加载页：DSH 服务就绪前显示，就绪后会被 DSH 界面替换 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>DeepSeek Harness</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    background: #0f1117;
+    color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+  }
+  .wrap { text-align: center; }
+  .logo {
+    width: 64px; height: 64px; margin: 0 auto 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+  h1 { font-size: 18px; font-weight: 600; letter-spacing: 0.5px; }
+  .status { margin-top: 10px; font-size: 13px; color: #8a8fa3; }
+  .spinner {
+    width: 28px; height: 28px; margin: 28px auto 0;
+    border: 3px solid #262a36; border-top-color: #4d6bfe;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img src="icon-256.png" alt="DeepSeek Harness" class="logo">
+    <h1>DeepSeek Harness</h1>
+    <div class="status">正在启动本地服务，请稍候…</div>
+    <div class="spinner"></div>
+  </div>
+</body>
+</html>
